@@ -1,0 +1,98 @@
+﻿
+<!--
+Author: Dilawar Shabbir
+Author URL: http://malikmobile.com/Developer
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>content</title><title>Malik Mobile</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Best Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="~/Scripts/jquery.min.js"></script>
+<!-- //js -->
+<!-- cart -->
+	<script src="~/Scripts/simpleCart.min.js"> </script>
+<!-- cart -->
+<link rel="stylesheet" type="text/css" href="~/Content/jquery-ui.css">
+<!-- for bootstrap working -->
+	<script type="text/javascript" src="~/Scripts/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<!-- animation-effect -->
+<link href="~/Content/animate.min.css" rel="stylesheet"> 
+<script src="~/Scripts/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+</head>
+	
+<body>
+<!-- header -->
+    @Html.Partial("/Views/Home/_header.cshtml"); 
+	<!-- //header -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+				<li><a href="~/Home/index"><span class="glyphicon glyphicon-home"        aria-hidden="true"></span>Home</a></li>
+				<li class="active">Contact Us</li>
+			</ol>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!-- mail -->
+	<div class="mail animated wow zoomIn" data-wow-delay=".5s">
+		<div class="container">
+			<h3>Mail Us</h3>
+			<p class="est">If you are having any query you can feel free to contact us via valid email adress. We 
+				shall be happy in assisting you.</p>
+			<div class="mail-grids">
+				<div class="col-md-8 mail-grid-left animated wow slideInLeft" data-wow-delay=".5s">
+					<form>
+						<input name ="nam" type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+						<input name="mail" type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+						<input name ="sub" type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
+						<textarea name="sms" value="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<input type="submit" value="Submit Now" >
+					</form>
+				</div>
+				<div class="col-md-4 mail-grid-right animated wow slideInRight" data-wow-delay=".5s">
+					<div class="mail-grid-right1">
+						<img src="~/images/3.png" alt=" " class="img-responsive" />
+						<h4>Abdul Rauf <span>Manager</span></h4>
+						<ul class="phone-mail">
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>Phone: +92300 9416929</li>
+							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>Email: <a href="mailto:info@example.com">abdulrauf117@gmail.com</a></li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="twitter"></a></li>
+							<li><a href="#" class="g"></a></li>
+							<li><a href="#" class="instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+<!--			<iframe class="animated wow slideInLeft" data-wow-delay=".5s" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3098.7638135888296!2d-77.47669308468912!3d39.04350424592369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b63eb3bc8da92b%3A0x78c8e09ab1cabc90!2sAl+Hafeez+Shoping+Mall+Main+Blvd+Gulberg+Lahore+Pakistan!5e0!3m2!1sen!2sin!4v1457602090579" frameborder="0" style="border:0" allowfullscreen></iframe>
+    -->
+		</div>
+	</div>
+<!-- //mail -->
+<!-- footer -->
+        @Html.Partial("~/Views/Home/_footer.cshtml"); 
+	<!-- //footer -->
+</body>
+</html>
